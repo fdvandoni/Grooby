@@ -70,7 +70,5 @@ class Jugador(pygame.sprite.Sprite):
                 self.vida += 30
                 if (self.vida > 100):
                     self.vida = 100
-                print"Sumo"
         else:
             self.vida -=3 
-            print "Resto"

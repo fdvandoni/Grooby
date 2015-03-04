@@ -230,11 +230,11 @@ def main():
             if (puntos==500*n):
                 velocidad+=1
                 n=n+1
-            if ((puntos % 200 == 0)or(puntos == 50)):
+            if ((puntos % 200 == 0)or(puntos % 100 == 0)):
                 nmr_random=random.randint(30,420)
                 enemigo1 = Enemigo1(nmr_random, velocidad)
                 all_sprites.add(enemigo1)               
-            if ((puntos % 100 == 0)or(puntos % 80 == 0)):
+            if ((puntos % 100 == 0)or(puntos  == 50)):
                 nmr_random=random.randint(30,420)
                 enemigo2 = Enemigo2(nmr_random,velocidad)
                 all_sprites.add(enemigo2)
